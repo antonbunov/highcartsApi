@@ -2,12 +2,17 @@ import './assets/main.css'
 
 import HighchartsVue from 'highcharts-vue'
 import { createApp } from 'vue'
-import vue from 'vue' 
 import App from './App.vue'
 
-import HighchartsVue from 'highcharts-vue'
+// первый вариант
+// const app = createApp(App)
+// app.mount('#app')
+// app.use(HighchartsVue)
+
+// второй вариант
+createApp(App).use(HighchartsVue).mount('#app')
 
 
-createApp(App).mount('#app')
-createApp(App).use(HighchartsVue)
-App.use(HighchartsVue)
+// createApp(App).mount('#app')
+// createApp(App).use(HighchartsVue)
+// App.use(HighchartsVue)

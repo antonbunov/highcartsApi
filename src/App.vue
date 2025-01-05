@@ -25,9 +25,7 @@
   
   
   <script >
-  Vue.use(HighchartsVue.default)
   export default{
-   
     data(){
       return{
         chartOptions: {
